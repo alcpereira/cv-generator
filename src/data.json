@@ -1,0 +1,142 @@
+{
+  "header": {
+    "name": "Lorem Ipsum",
+    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nVestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla\nFusce velit urna, euismod ut nibh ut, finibus vestibulum magna."
+  },
+  "workExperience": [
+    {
+      "position": "Full Stack Software Lopsum",
+      "company": "Neque Porro",
+      "location": "Roma, Roman Empire",
+      "type": "Remote",
+      "years": "2022 - Present",
+      "bubbles": [
+        "TypeLorem",
+        "Reactsum",
+        "Reactsum Native",
+        "Ipsum.js",
+        "ClassQL",
+        "Phasux",
+        "AWS Nec"
+      ],
+      "lines": [
+        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
+        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+      ]
+    },
+    {
+      "position": "Full Stack Software Lopsum",
+      "company": "Neque Porro",
+      "location": "Roma, Roman Empire",
+      "type": "Remote",
+      "years": "2022 - Present",
+      "bubbles": [
+        "TypeLorem",
+        "Reactsum",
+        "Reactsum Native",
+        "Ipsum.js",
+        "ClassQL",
+        "Phasux",
+        "AWS Nec"
+      ],
+      "lines": [
+        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
+        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+      ]
+    },
+    {
+      "position": "Full Stack Software Lopsum",
+      "company": "Neque Porro",
+      "location": "Roma, Roman Empire",
+      "type": "Remote",
+      "years": "2022 - Present",
+      "bubbles": [
+        "TypeLorem",
+        "Reactsum",
+        "Reactsum Native",
+        "Ipsum.js",
+        "ClassQL",
+        "Phasux",
+        "AWS Nec"
+      ],
+      "lines": [
+        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
+        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "",
+      "duration": "3 months project",
+      "bubbles": ["Python", "Flask", "Docker", "Machine Learning", "SQLite"],
+      "lines": [
+        "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
+        "• Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
+        "• Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
+        "• Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
+        "• Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus."
+      ]
+    },
+    {
+      "name": "",
+      "duration": "3 months project",
+      "bubbles": ["Python", "Flask", "Docker", "Machine Learning", "SQLite"],
+      "lines": [
+        "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
+        "• Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
+        "• Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
+        "• Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
+        "• Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus."
+      ]
+    }
+  ],
+  "profile": {
+    "lines": [
+      "Ancient Rome, Roman Empire",
+      "Roman",
+      "+39 34 78 00 90 66",
+      "redacted@gmail.com"
+    ],
+    "linkedin": "linkedin.com/in/redacted",
+    "github": "github.com/redacted",
+    "twitter": "x.com/redacted"
+  },
+  "technical": [
+    {
+      "category": "Languages",
+      "bubbles": [
+        "TypeLorem",
+        "JavaScript",
+        "Python",
+        "Scribae",
+        "Architecture"
+      ]
+    },
+    {
+      "category": "Web Servers / APIs",
+      "bubbles": ["Ipsum.js", "Django", "Flask", "ClassQL", "Nest.js"]
+    }
+  ],
+  "languages": [
+    { "language": "Latin", "abbreviation": "LT", "level": "Native" },
+    { "language": "Greek", "abbreviation": "GK", "level": "Native" }
+  ],
+  "education": [
+    {
+      "degree": "MBA Lopsuming",
+      "school": "Universitae",
+      "location": "Athens, Roman Empire",
+      "years": "2014-2015"
+    },
+    {
+      "degree": "Lopsum's degree",
+      "school": "School Athens",
+      "location": "Athens, Roman Empire",
+      "years": "2009-2014"
+    }
+  ]
+}

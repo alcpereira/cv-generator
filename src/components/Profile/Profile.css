@@ -1,0 +1,112 @@
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 14px;
+}
+
+.profile__header__image img {
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__header__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125em;
+
+  p {
+    margin: 0;
+  }
+}
+
+.profile__header__links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profile__header__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.125em;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.profile__block-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25em;
+}
+
+.profile__languages-language {
+  display: flex;
+  gap: 0.75em;
+  font-size: 14px;
+}
+
+.profile__languages-abb {
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.profile__languages-level {
+  color: var(--light-grey);
+}
+
+.profile__education-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__education-school {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--light-grey);
+}
+
+.profile__education-years,
+.profile__education-location {
+  color: var(--light-grey);
+  font-size: 14px;
+}
+
+.profile__education-degree {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profile__education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.profile__skills-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em;
+  font-size: 12px;
+}
+
+.profile__skills-span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.profile__languages-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5em;
+}

@@ -1,0 +1,37 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.category__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+.category__subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.category__data {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category__bubbles {
+  display: flex;
+  gap: 0.5em;
+  font-size: 12px;
+}
+
+.category__lines {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+}

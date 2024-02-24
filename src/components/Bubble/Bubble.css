@@ -1,0 +1,7 @@
+.bubble {
+  border: 1px solid var(--light-grey);
+  color: var(--light-grey);
+  padding: 0.125em 0.75em;
+  border-radius: 1.5em;
+  flex-shrink: 0;
+}
