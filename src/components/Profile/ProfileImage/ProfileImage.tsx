@@ -1,14 +1,16 @@
 import "./ProfileImage.css";
 import ProfilePicture from "../../../assets/profile.png";
+import clsx from 'clsx';
 
 type ImageOptions = {
   circular?: boolean;
 };
 
 const ProfileImage = (options: ImageOptions = {}) => {
-  const classes = `profile__header__image ${
-    options.circular ? "profile__header__image__circular" : ""
-  }`;
+  const classes = clsx(
+    'profile__header__image',
+    { 'profile__header__image__circular': options.circular }
+  );
 
   return (
     <div className={classes}>
