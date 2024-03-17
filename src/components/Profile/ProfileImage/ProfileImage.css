@@ -1,0 +1,8 @@
+.profile__header__image img {
+  height: 150px;
+  overflow: hidden;
+}
+
+.profile__header__image__circular img {
+  border-radius: 50%;
+}

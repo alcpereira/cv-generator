@@ -2,8 +2,8 @@ import "./Profile.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import Title from "../Title/Title";
-import ProfilePicture from "../../assets/profile.png";
 import Bubble from "../Bubble/Bubble";
+import ProfileImage from "./ProfileImage/ProfileImage";
 
 type TechnicalCategory = {
   category: string;
@@ -43,14 +43,12 @@ const ProfileHeader = ({
 }: Data["profile"]) => {
   return (
     <div className="profile__header">
-      <div className="profile__header__image">
-        <img src={ProfilePicture} alt="Profile" />
-      </div>
+      <ProfileImage circular={true}/>
       <div className="profile__header__lines">
         {lines.map((line, index) => (
           <p key={index}>{line}</p>
         ))}
-      </div>
+      P</div>
       <div className="profile__header__links">
         <div className="profile__header__link">
           <FaGithub />
