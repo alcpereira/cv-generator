@@ -11,12 +11,6 @@
   font-size: 14px;
 }
 
-.profile__header__image img {
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
 .profile__header__lines {
   display: flex;
   flex-direction: column;
