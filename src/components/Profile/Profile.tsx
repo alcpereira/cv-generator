@@ -48,7 +48,7 @@ const ProfileHeader = ({
         {lines.map((line, index) => (
           <p key={index}>{line}</p>
         ))}
-      P</div>
+      </div>
       <div className="profile__header__links">
         <div className="profile__header__link">
           <FaGithub />

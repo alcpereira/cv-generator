@@ -4,5 +4,5 @@
 }
 
 .profile__header__image__circular img {
-  border-radius: 50%;
+  border-radius: 9999px;
 }
