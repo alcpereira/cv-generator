@@ -1,21 +1,29 @@
+import useProfilePicture from "../../../hooks/useProfilePicture";
+import clsx from "clsx";
 import "./ProfileImage.css";
-import ProfilePicture from "../../../assets/profile.png";
-import clsx from 'clsx';
 
 type ImageOptions = {
   circular?: boolean;
+  border?: boolean;
 };
 
 const ProfileImage = (options: ImageOptions = {}) => {
-  const classes = clsx(
-    'profile__header__image',
-    { 'profile__header__image__circular': options.circular }
+  const profilePicture = useProfilePicture();
+
+  const profilePictureClasses = clsx(
+    "profile__header__image",
+    { profile__header__image__circular: options.circular },
+    { profile__header__image__border: options.border }
   );
 
   return (
-    <div className={classes}>
-      <img src={ProfilePicture} alt="Profile" />
-    </div>
+    <>
+      {profilePicture && (
+        <div className={profilePictureClasses}>
+          <img src={profilePicture} alt="Profile" />
+        </div>
+      )}
+    </>
   );
 };
 
