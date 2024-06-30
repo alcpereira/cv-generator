@@ -12,7 +12,11 @@ function App() {
       <div className="app__body">
         <div
           className="app__body-left"
-          style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "20px",
+          }}
         >
           <Category data={data.workExperience} />
           <Category data={data.projects} />

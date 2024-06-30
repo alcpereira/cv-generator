@@ -13,7 +13,7 @@ const ProfileImage = (options: ImageOptions = {}) => {
   const profilePictureClasses = clsx(
     "profile__header__image",
     { profile__header__image__circular: options.circular },
-    { profile__header__image__border: options.border }
+    { profile__header__image__border: options.border },
   );
 
   return (
