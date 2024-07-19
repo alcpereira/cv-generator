@@ -10,7 +10,8 @@
     "prelint": "prettier . --write",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "pdf": "tsx pdf.ts"
+    "pdf": "tsx pdf.ts",
+    "typecheck": "tsc"
   },
   "dependencies": {
     "clsx": "^2.1.0",
