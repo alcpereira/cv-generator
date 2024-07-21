@@ -3,6 +3,8 @@ import Separator from "../Separator/Separator";
 import Title from "../Title/Title";
 import "./Category.css";
 
+type Lines = { text: string; bulletPoint: boolean }[];
+
 type WorkExperiences = {
   position: string;
   company: string;
@@ -10,14 +12,14 @@ type WorkExperiences = {
   type: string;
   years: string;
   bubbles: string[];
-  lines: string[];
+  lines: Lines;
 };
 
 type Projects = {
   name: string;
   duration: string;
   bubbles: string[];
-  lines: string[];
+  lines: Lines;
 };
 
 type Data = Projects | WorkExperiences;
@@ -55,11 +57,13 @@ const Category = ({ data }: { data: Data[] }) => {
                   <Bubble key={bubble_index} text={bubble} />
                 ))}
               </div>
-              <div className="category__lines">
+              <ul className="category__lines">
                 {item.lines.map((line, line_index) => (
-                  <p key={line_index}>{line}</p>
+                  <li key={line_index} className={line.bulletPoint ? "category__bulletPoints" : ""}>
+                    {line.text}
+                  </li>
                 ))}
-              </div>
+              </ul>
               {index !== data.length - 1 && (
                 <Separator marginBottom={10} marginTop={2} />
               )}
