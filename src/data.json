@@ -20,9 +20,18 @@
         "AWS Nec"
       ],
       "lines": [
-        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
-        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
-        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        }
       ]
     },
     {
@@ -41,9 +50,18 @@
         "AWS Nec"
       ],
       "lines": [
-        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
-        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
-        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        }
       ]
     },
     {
@@ -62,9 +80,18 @@
         "AWS Nec"
       ],
       "lines": [
-        "• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
-        "• Nam tempus nec erat non finibus. Etiam laoreet suscipit facilisis. Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna.",
-        "• Proin quis erat consequat, pulvinar lectus in, finibus nisi."
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla imperdiet.",
+          "bulletPoint": true
+        }
       ]
     }
   ],
@@ -74,11 +101,25 @@
       "duration": "3 months project",
       "bubbles": ["Python", "Flask", "Docker", "Machine Learning", "SQLite"],
       "lines": [
-        "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
-        "• Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
-        "• Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
-        "• Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
-        "• Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus."
+        {
+          "text": "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
+          "bulletPoint": false
+        },
+        {
+          "text": "Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
+          "bulletPoint": true
+        },        {
+          "text": "Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus.",
+          "bulletPoint": true
+        }
       ]
     },
     {
@@ -86,11 +127,25 @@
       "duration": "3 months project",
       "bubbles": ["Python", "Flask", "Docker", "Machine Learning", "SQLite"],
       "lines": [
-        "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
-        "• Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
-        "• Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
-        "• Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
-        "• Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus."
+        {
+          "text": "Suspendisse lacinia tristique tortor, at laoreet arcu lobortis id.",
+          "bulletPoint": false
+        },
+        {
+          "text": "Vivamus fermentum enim a posuere dapibus. Pellentesque sed enim mi.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Cras dictum vestibulum felis vitae consequat. Suspendisse potenti.",
+          "bulletPoint": true
+        },
+        {
+          "text": "Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
+          "bulletPoint": true
+        },        {
+          "text": "Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus.",
+          "bulletPoint": true
+        }
       ]
     }
   ],

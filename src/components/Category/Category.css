@@ -29,9 +29,17 @@
 .category__lines {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-  p {
-    margin: 0;
+  li {
     font-size: 14px;
   }
+}
+
+.category__bulletPoints {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 1em;
 }
