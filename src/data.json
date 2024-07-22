@@ -1,8 +1,13 @@
 {
   "header": {
     "name": "Lorem Ipsum",
-    "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \nVestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla\nFusce velit urna, euismod ut nibh ut, finibus vestibulum magna."
+    "resume": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Vestibulum rutrum mi quis tellus ullamcorper, nec tempus nulla",
+      "Fusce velit urna, euismod ut nibh ut, finibus vestibulum magna."
+    ]
   },
+
   "workExperience": [
     {
       "position": "Full Stack Software Lopsum",
@@ -116,7 +121,8 @@
         {
           "text": "Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
           "bulletPoint": true
-        },        {
+        },
+        {
           "text": "Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus.",
           "bulletPoint": true
         }
@@ -142,7 +148,8 @@
         {
           "text": "Phasellus eu sollicitudin nisi. Vivamus ullamcorper facilisis risus, sed hendrerit lacus scelerisque vel.",
           "bulletPoint": true
-        },        {
+        },
+        {
           "text": "Fusce lobortis eros suscipit, viverra lacus in, ullamcorper purus.",
           "bulletPoint": true
         }
