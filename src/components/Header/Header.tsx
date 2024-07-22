@@ -3,17 +3,16 @@ import "./Header.css";
 
 type HeaderProps = {
   name: string;
-  resume: string;
+  resume: string[];
 };
 
-const Header = ({ headerData }: { headerData: HeaderProps }) => {
-  const resumeLines = headerData.resume.split("\n");
+const Header = ({ name, resume }: HeaderProps) => {
   return (
     <>
       <div className="header__container">
-        <h1 className="header__name">{headerData.name}</h1>
+        <h1 className="header__name">{name}</h1>
         <div className="header__lines">
-          {resumeLines.map((line, index) => (
+          {resume.map((line, index) => (
             <p key={index}>{line}</p>
           ))}
         </div>

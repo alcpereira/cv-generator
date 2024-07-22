@@ -8,7 +8,7 @@ import Profile from "./components/Profile/Profile";
 function App() {
   return (
     <div className="app__container">
-      <Header headerData={data.header} />
+      <Header name={data.header.name} resume={data.header.resume} />
       <div className="app__body">
         <div
           className="app__body-left"
