@@ -4,16 +4,13 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import Title from "../Title/Title";
 import Bubble from "../Bubble/Bubble";
 import ProfileImage from "./ProfileImage/ProfileImage";
+import ProfileLanguages, {
+  type Language,
+} from "./ProfileLanguages/ProfileLanguages";
 
 type TechnicalCategory = {
   category: string;
   bubbles: string[];
-};
-
-type Languages = {
-  language: string;
-  abbreviation: string;
-  level: string;
 };
 
 type Education = {
@@ -31,7 +28,7 @@ type Data = {
     twitter: string;
   };
   technical: TechnicalCategory[];
-  languages: Languages[];
+  languages: Language[];
   education: Education[];
 };
 
@@ -87,26 +84,6 @@ const ProfileSkills = ({ technical }: { technical: TechnicalCategory[] }) => {
   );
 };
 
-const ProfileLanguages = ({ languages }: { languages: Languages[] }) => {
-  return (
-    <div className="profile__block-container">
-      <Title text="Languages" />
-      <div className="profile__languages-container">
-        {languages.map((language, index) => {
-          return (
-            <div className="profile__languages-language" key={index}>
-              <span className="profile__languages-abb">
-                {language.abbreviation}
-              </span>
-              <span className="profile__languages-level">{language.level}</span>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
 const ProfileEducation = ({ education }: { education: Education[] }) => {
   return (
     <div className="profile__block-container">
@@ -134,7 +111,7 @@ const Profile = ({ data }: { data: Data }) => {
     <div className="profile__container">
       <ProfileHeader {...data.profile} />
       <ProfileSkills technical={data.technical} />
-      <ProfileLanguages languages={data.languages} />
+      <ProfileLanguages languages={data.languages} showAbbreviation={false} />
       <ProfileEducation education={data.education} />
     </div>
   );
