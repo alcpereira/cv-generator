@@ -6,7 +6,7 @@
   font-weight: 400;
   -print-color-adjust: exact;
 
-  --red: rgb(167, 67, 67);
+  --color-theme: ;
   --light-grey: rgb(94, 90, 94);
   --light-grey-transparent: rgb(94, 90, 94, 0.3);
   --black: rgb(20, 20, 20);
