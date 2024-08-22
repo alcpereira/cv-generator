@@ -1,12 +1,11 @@
 import "./Profile.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import Title from "../Title/Title";
 import Bubble from "../Bubble/Bubble";
 import ProfileImage from "./ProfileImage/ProfileImage";
 import ProfileLanguages, {
   type Language,
 } from "./ProfileLanguages/ProfileLanguages";
+import ProfileLink, { ProfileLinkProps } from "./ProfileLink/ProfileLink";
 
 type TechnicalCategory = {
   category: string;
@@ -23,21 +22,14 @@ type Education = {
 type Data = {
   profile: {
     lines: string[];
-    linkedin: string;
-    github: string;
-    twitter: string;
+    links: ProfileLinkProps[];
   };
   technical: TechnicalCategory[];
   languages: Language[];
   education: Education[];
 };
 
-const ProfileHeader = ({
-  lines,
-  linkedin,
-  github,
-  twitter,
-}: Data["profile"]) => {
+const ProfileHeader = ({ lines, links }: Data["profile"]) => {
   return (
     <div className="profile__header">
       <ProfileImage circular={true} border={true} />
@@ -47,18 +39,9 @@ const ProfileHeader = ({
         ))}
       </div>
       <div className="profile__header__links">
-        <div className="profile__header__link">
-          <FaGithub />
-          <a href={`https://${github}`}>{github}</a>
-        </div>
-        <div className="profile__header__link">
-          <FaLinkedin />
-          <a href={`https://${linkedin}`}>{linkedin}</a>
-        </div>
-        <div className="profile__header__link">
-          <FaSquareXTwitter />
-          <a href={`https://${twitter}`}>{twitter}</a>
-        </div>
+        {links.map((link, index) => (
+          <ProfileLink key={index} type={link.type} link={link.link} />
+        ))}
       </div>
     </div>
   );

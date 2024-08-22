@@ -1,0 +1,15 @@
+.profile__header__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.125em;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.profile__header__link a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -21,22 +21,6 @@
   }
 }
 
-.profile__header__links a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.profile__header__link {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: 0.125em;
-
-  span {
-    font-size: 14px;
-  }
-}
-
 .profile__block-container {
   display: flex;
   flex-direction: column;
