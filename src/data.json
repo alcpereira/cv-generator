@@ -163,9 +163,12 @@
       "+39 34 78 00 90 66",
       "redacted@gmail.com"
     ],
-    "linkedin": "linkedin.com/in/redacted",
-    "github": "github.com/redacted",
-    "twitter": "x.com/redacted"
+    "links": [
+      { "type": "LinkedIn", "link": "linkedin.com/in/redacted" },
+      { "type": "GitHub", "link": "github.com/redacted" },
+      { "type": "Twitter", "link": "x.com/redacted" },
+      { "type": "Website", "link": "website/portfolio" }
+    ]
   },
   "technical": [
     {
