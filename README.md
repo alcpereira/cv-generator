@@ -27,3 +27,11 @@ npm run dev
 
 - React + Vite
 - Puppeteer for PDF generation
+
+Contributing: Here's a quick guide for writing commit messages:
+
+1. Start with a type: Use fix:, feat:, docs:, etc., to indicate the nature of the change.
+2. Add a brief description: Follow the type with a concise summary of the change (2-4 words).
+3. Optional details: Use a blank line to separate the summary from a longer description if needed.
+4. Reference issues: Include issue numbers or tags if applicable
+5. Explore conventional commits documentation here: https://kapeli.com/cheat_sheets/Conventional_Commits.docset/Contents/Resources/Documents/index
