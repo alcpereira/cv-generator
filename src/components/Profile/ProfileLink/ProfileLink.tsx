@@ -29,8 +29,10 @@ const ProfileLink = ({ type, link }: ProfileLinkProps) => {
 
   return (
     <div className="profile__header__link">
-      {icon}
-      <a href={`https://${link}`}>{type}</a>
+      <a href={`https://${link}`} target="_blank" rel="noopener noreferrer">
+        {icon}
+        <span>{type}</span>
+      </a>
     </div>
   );
 };
