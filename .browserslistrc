@@ -1,0 +1,12 @@
+# Browsers that we support
+
+chrome >= 120
+edge >= 120
+firefox >= 117
+safari >= 17.2
+opera >= 106
+chromeandroid > 128
+android > 128
+iOS >= 17.2
+operamobile > 80
+firefoxandroid > 127
