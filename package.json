@@ -36,7 +36,7 @@
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
     "prettier": "3.3.2",
-    "puppeteer": "^22.1.0",
+    "puppeteer": "^23.4.1",
     "tsx": "^4.7.1",
     "typescript": "^5.2.2",
     "vite": "^5.4.8"
