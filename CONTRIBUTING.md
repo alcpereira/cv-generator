@@ -140,7 +140,7 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/alcper
 
 ### Your First Code Contribution
 
-We're following the [Conventional Commits structure](https://www.conventionalcommits.org/en/v1.0.0/). 
+We're following the [Conventional Commits structure](https://www.conventionalcommits.org/en/v1.0.0/).
 
 Here's a small snippet of the main points:
 
@@ -164,7 +164,6 @@ A scope may be provided to a commit’s type, to provide additional
 contextual information and is contained within parenthesis, e.g., `feat(parser): add ability to parse arrays`.
 
 If you're having trouble or wondering how to properly follow the conventional commit structure ,[you can always use this repo to help you with your commits.](https://github.com/semantic-release/semantic-release)
-
 
 ### Improving The Documentation
 
