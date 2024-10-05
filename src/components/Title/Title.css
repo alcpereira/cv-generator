@@ -1,6 +1,6 @@
 .title {
-  background-color: var(--red);
-  color: white;
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-100);
   padding: 0.25em 0.5em;
   border-radius: 0.5em;
   text-transform: uppercase;

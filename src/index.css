@@ -6,8 +6,9 @@
   font-weight: 400;
   -print-color-adjust: exact;
 
-  --red: rgb(167, 67, 67);
-  --light-grey: rgb(94, 90, 94);
-  --light-grey-transparent: rgb(94, 90, 94, 0.3);
-  --black: rgb(20, 20, 20);
+  --color-primary-500: rgb(167, 67, 67);
+  --color-neutral-100: rgb(255, 255, 255);
+  --color-neutral-200: rgb(94, 90, 94, 0.3);
+  --color-neutral-400: rgb(94, 90, 94);
+  --color-neutral-900: rgb(20, 20, 20);
 }

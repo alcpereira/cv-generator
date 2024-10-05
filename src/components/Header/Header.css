@@ -7,7 +7,7 @@
 
 .header__lines > p {
   margin: 0;
-  color: var(--light-grey);
+  color: var(--color-neutral-400);
   font-size: 20px;
   line-height: 1.3;
 }
