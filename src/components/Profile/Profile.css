@@ -36,12 +36,12 @@
 .profile__education-school {
   font-weight: 600;
   font-size: 14px;
-  color: var(--light-grey);
+  color: var(--color-neutral-400);
 }
 
 .profile__education-years,
 .profile__education-location {
-  color: var(--light-grey);
+  color: var(--color-neutral-400);
   font-size: 14px;
 }
 

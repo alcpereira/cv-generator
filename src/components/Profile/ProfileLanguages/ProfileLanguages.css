@@ -10,7 +10,7 @@
 }
 
 .profile__languages-level {
-  color: var(--light-grey);
+  color: var(--color-neutral-400);
 }
 
 .profile__languages-container {
