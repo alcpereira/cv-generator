@@ -23,16 +23,24 @@ type Data = {
   profile: {
     lines: string[];
     links: ProfileLinkProps[];
+    /** Display or not the profile image */
+    shouldDisplayProfileImage: boolean;
   };
   technical: TechnicalCategory[];
   languages: Language[];
   education: Education[];
 };
 
-const ProfileHeader = ({ lines, links }: Data["profile"]) => {
+const ProfileHeader = ({
+  lines,
+  links,
+  shouldDisplayProfileImage,
+}: Data["profile"]) => {
   return (
     <div className="profile__header">
-      <ProfileImage circular={true} border={true} />
+      {shouldDisplayProfileImage && (
+        <ProfileImage circular={true} border={true} />
+      )}
       <div className="profile__header__lines">
         {lines.map((line, index) => (
           <p key={index}>{line}</p>

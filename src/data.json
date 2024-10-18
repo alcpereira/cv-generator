@@ -168,7 +168,8 @@
       { "type": "GitHub", "link": "github.com/redacted" },
       { "type": "Twitter", "link": "x.com/redacted" },
       { "type": "Website", "link": "website/portfolio" }
-    ]
+    ],
+    "shouldDisplayProfileImage": false
   },
   "technical": [
     {
