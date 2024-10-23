@@ -26,3 +26,35 @@ jobs:
 
       - name: Run typecheck
         run: npm run typecheck
+
+  build_deploy:
+    runs-on: ubuntu-latest
+    needs: typecheck
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build frontend
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: pages deploy ./dist --project-name=cv-generator --branch=${{ github.ref_name }}
