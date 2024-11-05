@@ -59,7 +59,10 @@ const Category = ({ data }: { data: Data[] }) => {
               </div>
               <ul className="category__lines">
                 {item.lines.map((line, line_index) => (
-                  <li key={line_index} className={line.bulletPoint ? "category__bulletPoints" : ""}>
+                  <li
+                    key={line_index}
+                    className={line.bulletPoint ? "category__bulletPoints" : ""}
+                  >
                     {line.text}
                   </li>
                 ))}
