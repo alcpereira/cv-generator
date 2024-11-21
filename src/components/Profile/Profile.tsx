@@ -21,6 +21,7 @@ type Education = {
 
 type Data = {
   profile: {
+    shouldDisplayProfileImage: boolean;
     lines: string[];
     links: ProfileLinkProps[];
   };
@@ -29,10 +30,16 @@ type Data = {
   education: Education[];
 };
 
-const ProfileHeader = ({ lines, links }: Data["profile"]) => {
+const ProfileHeader = ({
+  lines,
+  links,
+  shouldDisplayProfileImage,
+}: Data["profile"]) => {
   return (
     <div className="profile__header">
-      <ProfileImage circular={true} border={true} />
+      {shouldDisplayProfileImage && (
+        <ProfileImage circular={true} border={true} />
+      )}
       <div className="profile__header__lines">
         {lines.map((line, index) => (
           <p key={index}>{line}</p>
