@@ -157,6 +157,7 @@
     }
   ],
   "profile": {
+    "shouldDisplayProfileImage": false,
     "lines": [
       "Ancient Rome, Roman Empire",
       "Roman",
