@@ -26,3 +26,67 @@ jobs:
 
       - name: Run typecheck
         run: npm run typecheck
+
+  build:
+    runs-on: ubuntu-latest
+    needs: typecheck
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build frontend
+        run: npm run build
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-files
+          path: ./dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+      deployments: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: production-files
+          path: ./dist
+
+      - name: Deploy to Cloudflare Pages
+        id: deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.API_TOKEN }}
+          accountId: ${{ secrets.ACCOUNT_ID }}
+          wranglerVersion: "3.80.4"
+          command: pages deploy dist --project-name=cv-generator-preview-deploy # Write the same name of the created project on CloudFlare Pages 
+
+      - name: Add deploy comment to PR
+        if: github.event_name != 'push'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: 'Preview: ${{ steps.deploy.outputs.deployment-url }}'
+            })
