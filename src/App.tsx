@@ -19,7 +19,7 @@ function App() {
           }}
         >
           <Category data={data.workExperience} />
-          <Category data={data.projects} />
+          {data?.projects?.length > 0 && <Category data={data.projects} />}
         </div>
         <div className="app__body-right">
           <Profile data={data} />
