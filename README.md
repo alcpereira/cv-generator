@@ -2,6 +2,10 @@
 
 The CV PDF Generator is a React app used to build a CV and export it as a PDF.
 
+## Prerequisites
+
+Make sure you have the correct version of Node.js installed. You can use a node version manager that supports `.node-version` file such [`fnm`](https://github.com/Schniz/fnm).
+
 ## How To Run
 
 1. Add your picture in `src/assets/profile.jpeg`
