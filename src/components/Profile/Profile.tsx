@@ -46,9 +46,9 @@ const ProfileHeader = ({
         ))}
       </div>
       <div className="profile__header__links">
-        {links.map((link, index) => (
-          <ProfileLink key={index} type={link.type} link={link.link} />
-        ))}
+        {links.map((link, index) => {
+          return <ProfileLink key={index} {...link} />;
+        })}
       </div>
     </div>
   );

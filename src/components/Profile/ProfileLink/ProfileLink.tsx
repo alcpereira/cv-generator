@@ -7,9 +7,11 @@ export type ProfileLinkProps = {
   type: string;
   /** Please, use without https:// */
   link: string;
+  /** Optional: custom display name for the link */
+  name?: string;
 };
 
-const ProfileLink = ({ type, link }: ProfileLinkProps) => {
+const ProfileLink = ({ type, link, name }: ProfileLinkProps) => {
   let icon;
 
   switch (type) {
@@ -34,7 +36,7 @@ const ProfileLink = ({ type, link }: ProfileLinkProps) => {
     <div className="profile__header__link">
       <a href={`https://${link}`} target="_blank" rel="noopener noreferrer">
         {icon}
-        <span>{type}</span>
+        <span>{name || type}</span>
       </a>
     </div>
   );
