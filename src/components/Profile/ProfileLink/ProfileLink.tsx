@@ -1,5 +1,5 @@
 import { FaGithub, FaHouseUser, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaBluesky } from "react-icons/fa6";
 import "./ProfileLink.css";
 
 export type ProfileLinkProps = {
@@ -24,6 +24,9 @@ const ProfileLink = ({ type, link }: ProfileLinkProps) => {
       break;
     case "Website":
       icon = <FaHouseUser />;
+      break;
+    case "Bluesky":
+      icon = <FaBluesky />;
       break;
   }
 
